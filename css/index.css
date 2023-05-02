@@ -28,7 +28,7 @@ body {
   background-color: var(--bg);
   padding: 24px;
 }
-header {
+.header {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -105,11 +105,10 @@ p {
 }
 .checkbox:checked + .toggle-thumb::before {
   transform: translateX(41px);
+}
+.switch .checkbox:checked + .toggle-thumb {
   background-color: var(--purple-dark);
 }
-/* .toggle-thumb::before:focus {
-  background-color: var(--purple-dark);
-} */
 .card {
   margin-top: 48px;
   color: var(--white);
@@ -123,6 +122,10 @@ p {
 .card__price {
   display: flex;
   align-items: end;
+}
+.card__price .firstPrice {
+  align-self: flex-end;
+  font: var(--h2);
 }
 .card__price span {
   font: var(--body1-bold);
@@ -181,6 +184,12 @@ button {
 .pro button {
   background-color: var(--blue-dark);
 }
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
 @media (min-width: 1280px) {
   body {
     font: var(--h1);
@@ -189,15 +198,14 @@ button {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 1240px;
+    max-width: 1240px;
     gap: 24px;
   }
   .card {
-    width: 398px;
+    flex: 1;
     padding: 40px;
   }
   header h2 {
-    width: 818px;
     font: var(--h1);
     margin: auto;
   }
