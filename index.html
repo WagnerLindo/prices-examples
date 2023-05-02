@@ -14,7 +14,7 @@
     <title>Sección de precios</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>PRECIOS</h1>
       <div class="header__text">
         <h2>
@@ -35,8 +35,8 @@
         <span>Anualmente(-40%)</span>
       </div>
     </header>
-    <div class="description">
-      <section class="card basic">
+    <main class="description">
+      <div class="card basic">
         <div>
           <h2>Básico</h2>
           <p>Plan individual</p>
@@ -46,9 +46,8 @@
           elit.
         </p>
         <div class="card__price">
-          <h2>
-            $50<span>USD</span><span class="card__price__span2">/mensual</span>
-          </h2>
+          <span class="firstPrice" id="price1">$50</span><span>USD</span
+          ><span class="card__price__span2 mensual">/mensual</span>
         </div>
         <div class="cardBasic__content">
           <p>¿Qué está incluido?</p>
@@ -70,8 +69,8 @@
             <button>Empezar</button>
           </div>
         </div>
-      </section>
-      <section class="card pro">
+      </div>
+      <div class="card pro">
         <div>
           <h2>Pro</h2>
           <p>Plan individual</p>
@@ -81,32 +80,35 @@
           elit.
         </p>
         <div class="card__price">
-          <h2>
-            $75<span>USD</span><span class="card__price__span2">/mensual</span>
-          </h2>
+          <span class="firstPrice" id="price2">$75</span><span>USD</span
+          ><span class="card__price__span2 mensual">/mensual</span>
         </div>
         <div class="cardBasic__content">
           <p>¿Qué está incluido?</p>
           <div class="cardBasic__content__checklist">
             <ul class="selector">
               <li class="selector__saturation">
-                <img src="./icons/check.svg" alt="" /> Acceso de por vida a los
-                cursos que completes
+                <img src="./icons/Check black Icon.svg" alt="" /> Acceso de por
+                vida a los cursos que completes
               </li>
               <li>
-                <img src="./icons/check.svg" alt="" /> Acceso a todos los cursos
+                <img src="./icons/Check black Icon.svg" alt="" /> Acceso a todos
+                los cursos
               </li>
               <li>
-                <img src="./icons/check.svg" alt="" /> Acceso a todos los
-                proyectos
+                <img src="./icons/Check black Icon.svg" alt="" /> Acceso a todos
+                los proyectos
               </li>
-              <li><img src="./icons/check.svg" alt="" /> Acceso a Discord</li>
+              <li>
+                <img src="./icons/Check black Icon.svg" alt="" /> Acceso a
+                Discord
+              </li>
             </ul>
             <button>Empezar</button>
           </div>
         </div>
-      </section>
-      <section class="card company">
+      </div>
+      <div class="card company">
         <div>
           <h2>Empresas</h2>
           <p>Plan para 5 miembros</p>
@@ -116,9 +118,8 @@
           elit.
         </p>
         <div class="card__price">
-          <h2>
-            $99<span>USD</span><span class="card__price__span2">/mensual</span>
-          </h2>
+          <span class="firstPrice" id="price3">$99</span><span>USD</span
+          ><span class="card__price__span2 mensual">/mensual</span>
         </div>
         <div class="cardBasic__content">
           <p>¿Qué está incluido?</p>
@@ -140,7 +141,8 @@
             <button>Empezar</button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
