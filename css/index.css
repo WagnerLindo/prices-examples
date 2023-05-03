@@ -162,7 +162,7 @@ body {
   width: 100%;
   border-radius: 96px;
   border: none;
-  padding: 26px 121px;
+  padding: 26px;
   background-color: var(--purple-dark);
 }
 .button:hover {
