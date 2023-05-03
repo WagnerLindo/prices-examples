@@ -11,12 +11,20 @@ const planPricesMap = {
   enterprise: 99,
 };
 
+const roundValue = Math.round(planPricesMap.enterprise * 12 * 0.4);
+
 switchEl.addEventListener("input", (event) => {
   console.log(event.target.checked);
   if (event.target.checked === true) {
-    price1El.textContent = `$${planPricesMap.basic * 12}`;
-    price2El.textContent = `$${planPricesMap.pro * 12}`;
-    price3El.textContent = `$${planPricesMap.enterprise * 12}`;
+    price1El.textContent = `$${
+      [planPricesMap.basic * 12] - [planPricesMap.basic * 12 * 0.4]
+    } `;
+    price2El.textContent = `$${
+      planPricesMap.pro * 12 - [planPricesMap.pro * 12 * 0.4]
+    }`;
+    price3El.textContent = `$${[
+      [planPricesMap.enterprise * 12] - [roundValue],
+    ]}`;
     mensualEl.forEach((element) => {
       element.textContent = "/anual";
     });
